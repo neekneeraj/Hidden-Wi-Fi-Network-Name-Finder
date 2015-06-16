@@ -1,0 +1,3 @@
+data = open("info.txt" , "w")
+
+data.write 

