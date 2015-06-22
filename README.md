@@ -1,4 +1,4 @@
-# Cracking and Hardening of Hidden-SSID feature of Wireless Access Point
+# Exploiting Hidden-SSID feature of Wireless Access Point.
 APs announces its presence by broadcasting the SSID, which is human-readable and often contain name of organisation, companies or government departments. Hidden networks restrict APs point from broadcasting the SSID, gives organisation some privacy. The clients need to send directed active probe to every AP they encountered. This creates the tradeoff between the privacy for the network and for the client. Many organisation gives importance to their infrastructure security rather than that of the client. They see hiding the network as defense in depth when used in combination with other mechanisms such as link-layer encryption and MAC-address filtering.
 
 This project comprises of: 
